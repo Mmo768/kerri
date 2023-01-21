@@ -1,0 +1,243 @@
+.ff-n{
+    font-family: 'Nunito', sans-serif !important;
+}
+.ff-m{
+    font-family: 'Montserrat', sans-serif !important;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
+.fs-16{
+    font-size: 1rem;
+}
+.fs-20{
+    font-size: 1.25rem;
+}
+.fs-25{
+    font-size: 1.5625rem;
+}
+.fs-30{
+    font-size: 1.875rem;
+}
+.fs-35{
+    font-size: 2.1875rem;
+}
+.lh-20{
+    line-height: 1.25rem;
+}
+.lh-25{
+    line-height: 1.5625rem;
+}
+.lh-30{
+    line-height: 1.875rem;
+}
+.lh-35{
+    line-height: 2.1875rem;
+}
+.lh-40{
+    line-height: 2.5rem;
+}
+.text-main{
+    color: #e65f78 !important;
+}
+.bg-main{
+    background-color: #e65f78 !important;
+}
+.text-p{
+    color: #6c757d !important;
+}
+/* start normalize */
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+span{
+    display: inline-block;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+/* ========== end normalize ==========  */
+
+/*========== start navbar ========== */
+nav img{
+    width: 80px;
+}
+ nav li a:hover, nav li a.active{
+    color: #e65f78 !important;
+}
+.nav-link{
+    padding: 8px;
+}
+/*========== end navbar ========== */
+
+/*========== start header ========== */
+header{
+    background-image: url("../image/header-bg.jpg");
+    background-position: center;
+    background-size: cover;
+}
+header h1{
+    font-size: 3.375rem !important;
+}
+header p{
+    color: rgb(255 255 255 /.75);
+}
+.layer{
+    background-color: rgb(0 0  0 /.7);
+}
+@media (max-width:768px) {
+    header h1{
+        font-size: 38px !important;
+    }
+}
+header a{
+    width: 30px;
+    height: 100px;
+    border-radius: 30px;
+}
+header a>span{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 25px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid white;
+    animation: uptodown .7s linear 0s infinite normal;
+}
+header a>span>span{
+    width: 5px;
+    height: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display: block;
+}
+@keyframes uptodown {
+    0%{
+        transform: translateY(0);
+    }
+    60%{
+        transform: translateY(30px);
+    }
+    70%{
+        transform: translateY(15px);
+    }
+    80%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/*===========end header===========*/
+
+/*=========== start about ===========*/
+.about .image{
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
+}
+.about a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #dee2e6;
+    transition: .3s 0s all linear;
+}
+.about a:hover{
+    color: #e65f78 !important;
+    border: 2px solid #e65f78;
+}
+/*=========== end about ===========*/
+
+/*=========== start services ===========*/
+.services .box span{
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #e65f78;
+    margin: -10px auto 10px;
+    transition: .3s 0s all linear;
+}
+.services .box:hover span{
+    width: 120px;
+}
+/*=========== end services ===========*/
+
+/*=========== start client ===========*/
+.client .box .image{
+    width: fit-content;
+    padding: 0.25rem;
+    border: 1px solid #dee2e6;
+    background-color: white;
+}
+.client .box img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.client .carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 5px;
+    background-color: #e65f78;
+    border-radius: 15px !important;
+    border-top: 0;
+    border-bottom: 0;
+}
+.client .carousel-indicators .active{
+    width: 20px;
+}
+/*=========== end client ===========*/
+
+/*=========== start works ===========*/
+.works .box .image .layer{
+    opacity: 0;
+    transition: .3s 0s all linear;
+}
+.works .box .image:hover .layer{
+    opacity: 1;
+}
+.works .nav-pills .nav-link.active,.works  .nav-pills .show>.nav-link{
+    background-color: #e65f78 !important;
+    color: white !important;
+}
+.works .row{
+    margin-top: 0 !important;
+}
+/*=========== end works ===========*/
+
+/*=========== start contact ===========*/
+textarea{
+    height: 150px;
+}
+.form-control:focus{
+    border-color: #e65f78 !important;
+    border-width: 2px;
+    box-shadow: none;
+}
+/*=========== end contact ===========*/
+
+/*=========== start footer ===========*/
+footer a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(241, 241, 241, 0.08);
+}
+footer a:hover{
+    color: #e65f78 !important;
+}
+/*=========== end footer ===========*/
